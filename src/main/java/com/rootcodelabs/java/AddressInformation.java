@@ -40,7 +40,14 @@ public class AddressInformation {
     }
 
     public String getAddress() {
-        return  houseNumber + ",\n" + streetName  + ",\n" + city  ;
+        //TODO: You can use text blocks for clearer formatting
+        //return  houseNumber + ",\n" + streetName  + ",\n" + city  ;
+        return String.format("""
+                %s
+                %s
+                %s
+                """, houseNumber,streetName,city);
+
     }
 
 }
