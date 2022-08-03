@@ -13,8 +13,13 @@ public class DemoAddressInformation {
         System.out.println(address2.getAddress());
 
         RandomDetails rand = new RandomDetails();
-        System.out.println(rand.randomAddress);
-        System.out.println(rand.randomPhoneNumber);
+        //TODO: Never expose the variables outside the classes. Use getters if you really need them
+//        System.out.println(rand.randomAddress);
+//        System.out.println(rand.randomPhoneNumber);
+        System.out.println(rand.getRandomAddress());
+        System.out.println(rand.getRandomPhoneNumber());
+        System.out.println(rand.getRandomPhoneNumber("071",10));
+
     }
 }
 
